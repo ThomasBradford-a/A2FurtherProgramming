@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExportController">
+   <children>
+      <Text layoutX="194.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It's time to export!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="107.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill out the form to export the post you want!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="93.0" layoutY="181.0" text="Post ID" />
+      <Label layoutX="93.0" layoutY="223.0" text="File Name" />
+      <Label layoutX="93.0" layoutY="264.0" text="File Location" />
+      <TextField fx:id="postIdTextField" layoutX="211.0" layoutY="177.0" />
+      <TextField fx:id="fileNameTextField" layoutX="211.0" layoutY="219.0" />
+      <TextField fx:id="fileLocationTextField" layoutX="211.0" layoutY="260.0" />
+      <Button fx:id="handleBrowse" layoutX="360.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleBrowse" text="Browse" />
+      <Button fx:id="handleExport" layoutX="308.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleExport" text="Save" />
+      <Button fx:id="switchToDashboard" layoutX="211.0" layoutY="327.0" mnemonicParsing="false" onAction="#switchToDashboard" text="Home" />
+   </children>
+</AnchorPane>

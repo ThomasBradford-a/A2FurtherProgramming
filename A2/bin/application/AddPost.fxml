@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddPostController">
+   <children>
+      <Text layoutX="78.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please complete form to add a post to the collection">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="postIdTextField" layoutX="256.0" layoutY="137.0" />
+      <TextField fx:id="contentTextField" layoutX="256.0" layoutY="189.0" />
+      <TextField fx:id="authorTextField" layoutX="256.0" layoutY="239.0" />
+      <TextField fx:id="likesTextField" layoutX="256.0" layoutY="294.0" />
+      <TextField fx:id="sharesTextField" layoutX="256.0" layoutY="349.0" />
+      <TextField fx:id="dateTimeTextField" layoutX="256.0" layoutY="409.0" />
+      <TextField fx:id="mainPostIdTextField" layoutX="256.0" layoutY="471.0" />
+      <Label layoutX="153.0" layoutY="141.0" text="Post ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="193.0" text="Content">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="243.0" text="Author">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="298.0" text="Likes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="353.0" text="Shares">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="413.0" text="Date and Time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="475.0" text="Main Post Id">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="254.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter 0 if this is a main post and not a reply" />
+      <Button layoutX="468.0" layoutY="538.0" mnemonicParsing="false" onAction="#handleAddPost" text="Add to collection" />
+      <Button layoutX="78.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchToDashboard" text="Home" />
+   </children>
+</AnchorPane>

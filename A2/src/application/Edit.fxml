@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditController">
+   <children>
+      <Label layoutX="90.0" layoutY="96.0" text="First Name" />
+      <Label layoutX="91.0" layoutY="139.0" text="Last Name" />
+      <Label layoutX="94.0" layoutY="187.0" text="Password" />
+      <TextField fx:id="firstNameField" layoutX="172.0" layoutY="92.0" />
+      <TextField fx:id="lastNameField" layoutX="172.0" layoutY="135.0" />
+      <PasswordField fx:id="passwordField" layoutX="172.0" layoutY="183.0" />
+      <Text layoutX="98.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lets change your details!">
+         <font>
+            <Font name="Eras Light ITC" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="269.0" layoutY="246.0" mnemonicParsing="false" text="Save" onAction="#handleSave"/>
+      <Button layoutX="172.0" layoutY="246.0" mnemonicParsing="false" text="Home" onAction="#switchToDashboard"/>
+   </children>
+</AnchorPane>
